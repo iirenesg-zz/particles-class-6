@@ -27,7 +27,12 @@ function HSVtoRGB(h, s, v) {
   };
 }
 
+const getContext = () => {
+  return document.getElementById('canvas').getContext('2d');
+}
+
 export {
   getRandom,
-  HSVtoRGB
+  HSVtoRGB,
+  getContext
 };

@@ -1,3 +1,5 @@
+import { getRandom, HSVtoRGB, getContext } from './util.js';
+
 class Particle {
   constructor(_x, _y, _r) {
     this.positionX = _x;
@@ -9,6 +11,7 @@ class Particle {
 
   draw() {
     const { r, g, b } = HSVtoRGB(getRandom(0, 200), 100, 300);
+    const ctx = getContext();
 
     ctx.fillStyle = `rgb(${r}, ${g}, ${b})`;
     ctx.beginPath();
