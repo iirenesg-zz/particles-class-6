@@ -1,7 +1,7 @@
-(() => {
-  import Particle from './Particle';
-  import { getRandom, HSVtoRGB } from './util';
+import Particle from '/Particle';
+import { getRandom, HSVtoRGB } from '/util';
 
+(() => {
   const canvas = document.getElementById('canvas');
   const ctx = canvas.getContext('2d');
   const numParticles = 1000;
